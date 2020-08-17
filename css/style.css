@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-family: "Cocogoose", "Cocogoose Pro", "COCOGOOSE", "Lato", sans-serif; }
+
+@font-face {
+  font-family: 'Cocogoose Pro';
+  src: url("../css/fonts/CocogoosePro-Thin.eot");
+  src: url("../css/fonts/CocogoosePro-Thin.eot?#iefix") format("embedded-opentype"), url("../css/fonts/CocogoosePro-Thin.woff2") format("woff2"), url("../css/fonts/CocogoosePro-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'COCOGOOSE';
+  src: url("../css/fonts/COCOGOOSE-UltraLight.eot");
+  src: url("../css/fonts/COCOGOOSE-UltraLight.eot?#iefix") format("embedded-opentype"), url("../css/fonts/COCOGOOSE-UltraLight.woff2") format("woff2"), url("../css/fonts/COCOGOOSE-UltraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'COCOGOOSE';
+  src: url("../css/fonts/COCOGOOSE-DemiBold.eot");
+  src: url("../css/fonts/COCOGOOSE-DemiBold.eot?#iefix") format("embedded-opentype"), url("../css/fonts/COCOGOOSE-DemiBold.woff2") format("woff2"), url("../css/fonts/COCOGOOSE-DemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Cocogoose';
+  src: url("../css/fonts/Cocogoose.eot");
+  src: url("../css/fonts/Cocogoose.eot?#iefix") format("embedded-opentype"), url("../css/fonts/Cocogoose.woff2") format("woff2"), url("../css/fonts/Cocogoose.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Cocogoose';
+  src: url("../css/fonts/Cocogoose-Light.eot");
+  src: url("../css/fonts/Cocogoose-Light.eot?#iefix") format("embedded-opentype"), url("../css/fonts/Cocogoose-Light.woff2") format("woff2"), url("../css/fonts/Cocogoose-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+
+.flex {
+  display: flex; }
+
+.remove-a-tag-decoration {
+  color: currentColor; }
+
+.remove-a-tag-decoration:hover {
+  text-decoration: none;
+  color: currentColor; }
+
+.top-ul {
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #272a31; }
+
+.top-ul-svg-logo {
+  width: 2rem;
+  height: 2rem;
+  fill: #fff; }
+
+.top-ul-li {
+  color: #fff;
+  list-style: none;
+  font-size: 1.5rem; }
