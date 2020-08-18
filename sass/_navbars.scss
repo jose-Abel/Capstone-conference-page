@@ -4,6 +4,7 @@
   justify-content: flex-end;
   align-items: center;
   background-color: $color-secondary;
+  width: 100%;
 }
 
 .top-ul-svg-logo {
@@ -16,4 +17,68 @@
   color: $color-white;
   list-style: none;
   font-size: $font-size-small;
+}
+
+//BOTTOM NAVBAR
+
+.top-navbar-button-container {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #fff;
+}
+
+.navbar-ul-bottom {
+  align-items: center;
+  width: 100%;
+}
+
+.nav-item-left {
+  width: 20%;
+}
+
+.blockchain-logo {
+  width: 3rem;
+  height: 3rem;
+}
+
+.blockchain-conference {
+  font-family: "Lato";
+  font-size: 1.5rem;
+  font-weight: 700;
+  width: 100%;
+  margin-left: calc(-2vw + (100 - 130) * ((100vw - 768px) / (1326 - 768)));
+}
+
+.bc-date {
+  margin-top: -1rem;
+}
+
+.nav-items-right {
+  width: 100%;
+  justify-content: space-between;
+  font-size: $font-size-small;
+}
+
+.nav-item-right {
+  margin-right: calc(2vw + (120 - 100) * ((100vw - 992px) / (1326 - 992)));
+  margin-left: calc(-25vw + (100 - 80) * ((100vw - 992px) / (1326 - 992)));
+
+  // margin-left: calc(2vw + (120 - 100) * ((100vw - 992px) / (1326 - 992)));
+}
+
+.nav-link,
+.nav-link:active {
+  width: 100%;
+  color: $color-secondary;
+  padding: 1.5rem !important;
+}
+
+.nav-link:hover {
+  color: $color-tertiary;
+}
+
+.nav-link:focus {
+  border: 5px solid $color-tertiary;
+  color: $color-tertiary;
 }

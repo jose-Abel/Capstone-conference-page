@@ -12,7 +12,9 @@
 
 <body>
 
-  <ul class="top-ul py-2 flex">
+  <!-- NAVBAR -->
+
+  <ul class="top-ul py-2 flex d-none d-md-inline-flex">
     <li class="top-ul-li pr-5">
       <svg class="top-ul-svg-logo">
         <use xlink:href="img/sprite.svg#iconfacebook"></use>
@@ -29,6 +31,68 @@
 
   </ul>
 
+  <!-- NAVBAR SCROLLING -->
+
+  <nav class="navbar navbar-expand-md top-navbar-button-container">
+
+    <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbar-top-toggler" aria-controls="navbar-top-toggler" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse top-navbar-list-container flex" id="navbar-top-toggler">
+
+      <ul class="navbar-nav navbar-ul-bottom flex">
+
+        <li class="nav-item nav-item-left flex">
+          <a class="nav-link" href="#">
+            <img src="img/blockchain.svg" alt="blockchain logo" class="blockchain-logo">
+          </a>
+        </li> 
+
+        <div class="blockchain-conference">
+          <p class="bc-global">
+            BC Global
+          </p>
+          <p class="bc-date">
+            Summit 2020
+          </p>
+        </div>
+
+        <div class="nav-items-right flex">
+
+          <li class="nav-item nav-item-right">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item nav-item-right">
+            <a class="nav-link" href="#">Program</a>
+          </li>
+          <li class="nav-item nav-item-right">
+            <a class="nav-link" href="#">Join</a>
+          </li>
+          <li class="nav-item nav-item-right">
+            <a class="nav-link" href="#">Sponsor</a>
+          </li>
+          <li class="nav-item nav-item-right">
+            <a class="nav-link" href="#">News</a>
+          </li>
+          <li class="nav-item nav-item-right">
+            <a class="nav-link" href="#">BC Campaign</a>
+          </li>
+
+        </div>
+
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header class="">
+    
+  </header>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 
 </html>
