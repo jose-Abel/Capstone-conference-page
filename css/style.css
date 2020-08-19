@@ -67,16 +67,14 @@ body {
   align-items: center;
   background-color: #272a31;
   width: 100%; }
-
-.top-ul-svg-logo {
-  width: 2rem;
-  height: 2rem;
-  fill: #fff; }
-
-.top-ul-li {
-  color: #fff;
-  list-style: none;
-  font-size: 1.5rem; }
+  .top-ul-svg-logo {
+    width: 2rem;
+    height: 2rem;
+    fill: #fff; }
+  .top-ul-li {
+    color: #fff;
+    list-style: none;
+    font-size: 1.5rem; }
 
 .top-navbar-button-container {
   position: sticky;
@@ -205,3 +203,50 @@ body {
   .heading-svg {
     width: 3.5rem;
     height: 3.5rem; }
+
+.main-program {
+  background-image: repeating-linear-gradient(to bottom, transparent, transparent 5px, #272a31 5px, #272a31 10px), repeating-linear-gradient(to right, rgba(39, 42, 49, 0.884), rgba(39, 42, 49, 0.884) 5px, #272a31 5px, #272a31 10px);
+  padding: 10rem 20rem; }
+  .main-program-title {
+    text-align: center;
+    margin-bottom: 5rem;
+    position: relative;
+    width: 100%;
+    color: #fff; }
+    .main-program-title::after {
+      content: "";
+      position: absolute;
+      bottom: -1rem;
+      left: 43rem;
+      border: 1px solid #ec5242;
+      width: 6%; }
+  .main-program-container {
+    width: 80vw;
+    transform: translateX(-5rem); }
+  .main-program-card {
+    background-color: rgba(54, 60, 75, 0.699);
+    color: #fff;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    cursor: pointer; }
+    .main-program-card:not(:last-child) {
+      border-right: 1px solid black; }
+    .main-program-card:hover {
+      border: 3px solid #fff; }
+    .main-program-card--img {
+      height: 5rem;
+      width: 5rem;
+      margin: 2rem 0;
+      justify-self: center; }
+    .main-program-card--title {
+      margin: 2rem 0; }
+    .main-program-card--text {
+      font-size: 1.3rem; }
+  .main-program-see-more {
+    margin-top: 10rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: underline; }

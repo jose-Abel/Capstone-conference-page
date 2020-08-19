@@ -1,25 +1,25 @@
-//TOP NAVBAR
+// TOP NAVBAR
 
 .top-ul {
   justify-content: flex-end;
   align-items: center;
   background-color: $color-secondary;
   width: 100%;
+
+  &-svg-logo {
+    width: 2rem;
+    height: 2rem;
+    fill: $color-white;
+  }
+
+  &-li {
+    color: $color-white;
+    list-style: none;
+    font-size: $font-size-small;
+  }
 }
 
-.top-ul-svg-logo {
-  width: 2rem;
-  height: 2rem;
-  fill: $color-white;
-}
-
-.top-ul-li {
-  color: $color-white;
-  list-style: none;
-  font-size: $font-size-small;
-}
-
-//BOTTOM NAVBAR
+// BOTTOM NAVBAR
 
 .top-navbar-button-container {
   position: sticky;
