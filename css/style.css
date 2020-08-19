@@ -114,8 +114,14 @@ body {
   margin-right: calc(2vw + (120 - 100) * ((100vw - 992px) / (1326 - 992)));
   margin-left: calc(-25vw + (100 - 80) * ((100vw - 992px) / (1326 - 992))); }
 
-.nav-link,
-.nav-link:active {
+.item-rigth-nav-link-active,
+.item-rigth-nav-link-active:active {
+  width: 100%;
+  color: #ec5242;
+  padding: 1.5rem !important; }
+
+.item-rigth-nav-link,
+.item-rigth-nav-link:active {
   width: 100%;
   color: #272a31;
   padding: 1.5rem !important; }
@@ -126,3 +132,76 @@ body {
 .nav-link:focus {
   border: 5px solid #ec5242;
   color: #ec5242; }
+
+.heading {
+  background-color: rgba(211, 211, 211, 0.205); }
+  .heading-background-img {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/blockchain-conference.jpg");
+    background-size: cover;
+    height: 15rem;
+    background-position: center; }
+  .heading-box {
+    margin: 0 0 0 10rem;
+    font-family: "Lato";
+    font-weight: 900;
+    transform: translateY(-5rem); }
+    .heading-box--secondary {
+      font-size: 3rem;
+      color: #ec5242;
+      position: relative; }
+      .heading-box--secondary .electron-svg {
+        position: absolute;
+        right: 0; }
+      .heading-box--secondary .ethereum-svg {
+        position: absolute;
+        left: -5rem;
+        top: 10rem; }
+    .heading-box--primary {
+      font-size: 6rem;
+      background: url("../img/text-background.jpg");
+      background-position: center;
+      background-size: cover;
+      -webkit-background-clip: text;
+      color: transparent;
+      padding-right: 20rem;
+      position: relative; }
+    .heading-box--paragraph {
+      padding-top: 3rem;
+      font-size: 1.5rem;
+      background-color: #fff;
+      padding: 4rem;
+      width: 70%;
+      position: relative;
+      z-index: 5; }
+      .heading-box--paragraph .bitcoin-svg {
+        position: absolute;
+        right: -2rem;
+        top: -1rem;
+        z-index: 2; }
+      .heading-box--paragraph .dogecoin-svg {
+        position: absolute;
+        right: -10rem; }
+    .heading-box--date {
+      font-size: 2.5rem;
+      font-weight: 900;
+      margin: 5rem 0 2rem 0;
+      margin-left: 3rem;
+      position: relative; }
+      .heading-box--date .xrp-svg {
+        position: absolute;
+        left: -8rem;
+        top: 3rem; }
+      .heading-box--date .litecoin-svg {
+        position: absolute;
+        left: 35rem; }
+    .heading-box--location {
+      font-size: 2rem;
+      margin-left: 3rem;
+      position: relative;
+      width: 45%; }
+      .heading-box--location .tether-svg {
+        position: absolute;
+        right: -5rem; }
+  .heading-svg {
+    width: 3.5rem;
+    height: 3.5rem; }

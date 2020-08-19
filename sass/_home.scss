@@ -1,0 +1,106 @@
+.heading {
+  background-color: rgba(211, 211, 211, 0.205);
+
+  &-background-img {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/blockchain-conference.jpg");
+    background-size: cover;
+    height: 15rem;
+    background-position: center;
+  }
+
+  &-box {
+    margin: 0 0 0 10rem;
+    font-family: "Lato";
+    font-weight: 900;
+    transform: translateY(-5rem);
+
+    &--secondary {
+      font-size: $font-size-large;
+      color: $color-tertiary;
+      position: relative;
+
+      .electron-svg {
+        position: absolute;
+        right: 0;
+      }
+
+      .ethereum-svg {
+        position: absolute;
+        left: -5rem;
+        top: 10rem;
+      }
+      
+    }
+
+    &--primary {
+      font-size: 6rem;
+      background: url("../img/text-background.jpg");
+      background-position: center;
+      background-size: cover;
+      -webkit-background-clip: text;
+      color: transparent;
+      padding-right: 20rem;
+      position: relative;
+    }
+
+    &--paragraph {
+      padding-top: 3rem;
+      font-size: $font-size-small;
+      background-color: $color-white;
+      padding: 4rem;
+      width: 70%;
+      position: relative;
+      z-index: 5;
+
+      .bitcoin-svg {
+        position: absolute;
+        right: -2rem;
+        top: -1rem;
+        z-index: 2;
+      }
+
+      .dogecoin-svg {
+        position: absolute;
+        right: -10rem;
+      }
+      
+    }
+    
+    &--date {
+      font-size: 2.5rem;
+      font-weight: 900;
+      margin: 5rem 0 2rem 0;
+      margin-left: 3rem;
+      position: relative;
+
+      .xrp-svg {
+        position: absolute;
+        left: -8rem;
+        top: 3rem;
+      }
+      
+      .litecoin-svg {
+        position: absolute;
+        left: 35rem;        
+      }
+    }
+
+    &--location {
+      font-size: $font-size-medium;
+      margin-left: 3rem;
+      position: relative;
+      width: 45%;
+
+      .tether-svg {
+        position: absolute;
+        right: -5rem;
+      }
+    }
+  }
+
+  &-svg {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}
+

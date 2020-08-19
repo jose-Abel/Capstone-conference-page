@@ -63,12 +63,17 @@
 .nav-item-right {
   margin-right: calc(2vw + (120 - 100) * ((100vw - 992px) / (1326 - 992)));
   margin-left: calc(-25vw + (100 - 80) * ((100vw - 992px) / (1326 - 992)));
-
-  // margin-left: calc(2vw + (120 - 100) * ((100vw - 992px) / (1326 - 992)));
 }
 
-.nav-link,
-.nav-link:active {
+.item-rigth-nav-link-active,
+.item-rigth-nav-link-active:active {
+  width: 100%;
+  color: $color-tertiary;
+  padding: 1.5rem !important;
+}
+
+.item-rigth-nav-link,
+.item-rigth-nav-link:active {
   width: 100%;
   color: $color-secondary;
   padding: 1.5rem !important;
