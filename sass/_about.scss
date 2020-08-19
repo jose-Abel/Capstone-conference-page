@@ -1,0 +1,202 @@
+// HEADER
+
+.about-header {
+  font-family: "Lato";
+  padding: 0 30rem;
+  background-color: $color-primary-ligther;
+
+  &-title {
+    padding-top: 5rem;
+    font-size: 6rem;
+    color: $color-tertiary;
+    text-align: center;
+    margin-left: 5rem;
+    margin-bottom: 6rem;
+    position: relative;
+    text-transform: uppercase;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -1rem;
+      left: 32rem;
+      border: 1px solid $color-tertiary;
+      width: 6%;
+    }
+  }
+
+  &-text {
+    background-color: $color-white;
+    border: 1px solid $color-primary;
+    padding: 5rem;
+
+    &--paragraph {
+      font-size: $font-size-small;
+      text-align: center;
+    }
+  }
+
+  &-contact {
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  &-email {
+    text-align: center;
+    font-size: 1.2rem;
+    text-decoration: underline;
+    font-weight: 900;
+    padding-bottom: 5rem;
+  }
+}
+
+// BLOCKCHAIN CONFERENCES LOGO
+
+.about-section-bclogo {
+  border-top: 1px solid black;
+  padding: 6rem 0;
+  font-family: "Lato";
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &--title {
+    position: relative;
+    margin-bottom: 5rem;
+    font-size: 3rem;
+    font-weight: 900;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -1rem;
+      left: 32rem;
+      border: 1px solid $color-tertiary;
+      width: 6%;
+    }
+  }
+
+  &--text {
+    padding: 0 25rem;
+    font-size: $font-size-small;
+    margin-bottom: 5rem;
+  }
+
+  &-box {
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $color-primary;
+    width: 40%;
+    padding: 5rem;
+  }
+
+  &--img {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  &-container {
+    margin-left: 1.6rem;
+
+    &--text {
+      font-size: $font-size-large;
+    }
+
+    &--date {
+      font-size: $font-size-small;
+    }
+  }
+}
+
+// PAST SUMMITS
+
+.about-section-past {
+  font-family: "Lato";
+  border-top: 1px solid black;
+  padding-top: 6rem;
+  text-align: center;
+
+  &--title {
+    position: relative;
+    margin-bottom: 5rem;
+    font-size: 3rem;
+    font-weight: 900;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -1rem;
+      left: 62rem;
+      border: 1px solid $color-tertiary;
+      width: 6%;
+    }
+  }
+
+  &--paragraph {
+    font-size: $font-size-medium;
+
+  }
+
+  &-imgs-box {
+    justify-content: center;
+  }
+
+  &-img {
+    margin-right: 5rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &--1 {
+      background: linear-gradient($color-tertiary-lighter, $color-tertiary-lighter), url(../img/blockchain-conference-2019.jpg);
+      background-size: cover;
+      width: 30vw;
+      height: 30vh;
+    }
+
+    &--2 {
+      background: linear-gradient($color-tertiary-lighter, $color-tertiary-lighter, $color-tertiary-lighter), url(../img/blockchain-conference-2018.jpg);
+      background-size: cover;
+      width: 30vw;
+      height: 30vh;
+    }
+
+    &--year {
+      display: block;
+      color: $color-white;
+      font-size: $font-size-large;
+      margin: 4rem 0 2rem 0;
+    }
+
+    &--title {
+      display: block;
+      color: $color-white;
+      font-size: $font-size-small;
+    }
+  }
+}
+
+// FOOTER
+
+.about-footer {
+  color: $color-white;
+
+  &-container {
+    padding: 8rem 13rem 6rem 13rem;
+  }
+
+  &-logo {
+    
+    &--img {
+      width: 5rem;
+      height: 5rem;
+      fill: $color-white;
+    }
+  }
+
+  &-text {
+
+  }
+}

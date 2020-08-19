@@ -367,3 +367,136 @@ body {
       font-size: 1.5rem;
       justify-self: center;
       margin-left: 10rem; }
+
+.about-header {
+  font-family: "Lato";
+  padding: 0 30rem;
+  background-color: rgba(211, 211, 211, 0.075); }
+  .about-header-title {
+    padding-top: 5rem;
+    font-size: 6rem;
+    color: #ec5242;
+    text-align: center;
+    margin-left: 5rem;
+    margin-bottom: 6rem;
+    position: relative;
+    text-transform: uppercase; }
+    .about-header-title::after {
+      content: "";
+      position: absolute;
+      bottom: -1rem;
+      left: 32rem;
+      border: 1px solid #ec5242;
+      width: 6%; }
+  .about-header-text {
+    background-color: #fff;
+    border: 1px solid #d3d3d3;
+    padding: 5rem; }
+    .about-header-text--paragraph {
+      font-size: 1.5rem;
+      text-align: center; }
+  .about-header-contact {
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 1.2rem; }
+  .about-header-email {
+    text-align: center;
+    font-size: 1.2rem;
+    text-decoration: underline;
+    font-weight: 900;
+    padding-bottom: 5rem; }
+
+.about-section-bclogo {
+  border-top: 1px solid black;
+  padding: 6rem 0;
+  font-family: "Lato";
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .about-section-bclogo--title {
+    position: relative;
+    margin-bottom: 5rem;
+    font-size: 3rem;
+    font-weight: 900; }
+    .about-section-bclogo--title::after {
+      content: "";
+      position: absolute;
+      bottom: -1rem;
+      left: 32rem;
+      border: 1px solid #ec5242;
+      width: 6%; }
+  .about-section-bclogo--text {
+    padding: 0 25rem;
+    font-size: 1.5rem;
+    margin-bottom: 5rem; }
+  .about-section-bclogo-box {
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #d3d3d3;
+    width: 40%;
+    padding: 5rem; }
+  .about-section-bclogo--img {
+    width: 10rem;
+    height: 10rem; }
+  .about-section-bclogo-container {
+    margin-left: 1.6rem; }
+    .about-section-bclogo-container--text {
+      font-size: 3rem; }
+    .about-section-bclogo-container--date {
+      font-size: 1.5rem; }
+
+.about-section-past {
+  font-family: "Lato";
+  border-top: 1px solid black;
+  padding-top: 6rem;
+  text-align: center; }
+  .about-section-past--title {
+    position: relative;
+    margin-bottom: 5rem;
+    font-size: 3rem;
+    font-weight: 900; }
+    .about-section-past--title::after {
+      content: "";
+      position: absolute;
+      bottom: -1rem;
+      left: 62rem;
+      border: 1px solid #ec5242;
+      width: 6%; }
+  .about-section-past--paragraph {
+    font-size: 2rem; }
+  .about-section-past-imgs-box {
+    justify-content: center; }
+  .about-section-past-img {
+    margin-right: 5rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    .about-section-past-img--1 {
+      background: linear-gradient(rgba(236, 83, 66, 0.733), rgba(236, 83, 66, 0.733)), url(../img/blockchain-conference-2019.jpg);
+      background-size: cover;
+      width: 30vw;
+      height: 30vh; }
+    .about-section-past-img--2 {
+      background: linear-gradient(rgba(236, 83, 66, 0.733), rgba(236, 83, 66, 0.733), rgba(236, 83, 66, 0.733)), url(../img/blockchain-conference-2018.jpg);
+      background-size: cover;
+      width: 30vw;
+      height: 30vh; }
+    .about-section-past-img--year {
+      display: block;
+      color: #fff;
+      font-size: 3rem;
+      margin: 4rem 0 2rem 0; }
+    .about-section-past-img--title {
+      display: block;
+      color: #fff;
+      font-size: 1.5rem; }
+
+.about-footer {
+  color: #fff; }
+  .about-footer-container {
+    padding: 8rem 13rem 6rem 13rem; }
+  .about-footer-logo--img {
+    width: 5rem;
+    height: 5rem;
+    fill: #fff; }
