@@ -1,4 +1,4 @@
-// Heading
+// HEADING
 
 .heading {
   background-color: rgba(211, 211, 211, 0.205);
@@ -64,8 +64,7 @@
       .dogecoin-svg {
         position: absolute;
         right: -10rem;
-      }
-      
+      }      
     }
     
     &--date {
@@ -106,7 +105,7 @@
   }
 }
 
-// Main Program
+// MAIN PROGRAMS
 
 .main-program {
   background-image: repeating-linear-gradient(to bottom, transparent, transparent 5px, $color-secondary 5px, $color-secondary 10px), repeating-linear-gradient(to right, $color-secondary-lighter, $color-secondary-lighter 5px, $color-secondary 5px, $color-secondary 10px);
@@ -177,7 +176,7 @@
   }
 }
 
-// Featured Speakers
+// FEATURED SPEAKERS
 
 .featured-speakers {
 
@@ -286,6 +285,71 @@
       margin-top: 1.5rem;
       word-break: break-word;
       width: 25vw;
+    }
+  }
+}
+
+// FOOTER
+
+.footer {
+  margin-top: 8rem;
+
+  &-top {
+    background-color: $color-secondary;
+    padding: 6rem 10rem 10rem 10rem;
+
+    &--title {
+      color: $color-primary;
+      text-align: center;
+      margin-bottom: 4rem;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -1rem;
+        left: 54rem;
+        border: 1px solid $color-tertiary;
+        width: 6%;
+      }
+    }
+
+    &-partners {
+      justify-content: center;
+      margin-top: 8rem;
+
+      &--name {
+        color: $color-primary;
+        font-size: $font-size-large;
+        margin-right: 5rem;
+      }
+    }
+  }
+
+  &-bottom {
+    margin-top: 10rem;
+    padding: 0 10rem;
+
+    &-logo {
+      align-items: center;
+
+      &--img {
+        width: 5rem;
+        height: 5rem;
+      }
+
+      &--title {
+        font-size: $font-size-medium;
+        font-family: "Lato";
+        font-weight: 900;
+        margin-left: 3rem;
+      }
+    }
+
+    &-text {
+      font-size: $font-size-small;
+      justify-self: center;
+      margin-left: 10rem;
     }
   }
 }

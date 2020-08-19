@@ -325,3 +325,45 @@ body {
     margin-top: 1.5rem;
     word-break: break-word;
     width: 25vw; }
+
+.footer {
+  margin-top: 8rem; }
+  .footer-top {
+    background-color: #272a31;
+    padding: 6rem 10rem 10rem 10rem; }
+    .footer-top--title {
+      color: #d3d3d3;
+      text-align: center;
+      margin-bottom: 4rem;
+      position: relative; }
+      .footer-top--title::after {
+        content: "";
+        position: absolute;
+        bottom: -1rem;
+        left: 54rem;
+        border: 1px solid #ec5242;
+        width: 6%; }
+    .footer-top-partners {
+      justify-content: center;
+      margin-top: 8rem; }
+      .footer-top-partners--name {
+        color: #d3d3d3;
+        font-size: 3rem;
+        margin-right: 5rem; }
+  .footer-bottom {
+    margin-top: 10rem;
+    padding: 0 10rem; }
+    .footer-bottom-logo {
+      align-items: center; }
+      .footer-bottom-logo--img {
+        width: 5rem;
+        height: 5rem; }
+      .footer-bottom-logo--title {
+        font-size: 2rem;
+        font-family: "Lato";
+        font-weight: 900;
+        margin-left: 3rem; }
+    .footer-bottom-text {
+      font-size: 1.5rem;
+      justify-self: center;
+      margin-left: 10rem; }
