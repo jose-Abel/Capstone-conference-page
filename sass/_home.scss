@@ -1,3 +1,5 @@
+// Heading
+
 .heading {
   background-color: rgba(211, 211, 211, 0.205);
 
@@ -104,8 +106,11 @@
   }
 }
 
+// Main Program
+
 .main-program {
   background-image: repeating-linear-gradient(to bottom, transparent, transparent 5px, $color-secondary 5px, $color-secondary 10px), repeating-linear-gradient(to right, $color-secondary-lighter, $color-secondary-lighter 5px, $color-secondary 5px, $color-secondary 10px);
+
   padding: 10rem 20rem;
 
   &-title {
@@ -169,5 +174,118 @@
     font-size: $font-size-medium;
     text-align: center;
     text-decoration: underline;
+  }
+}
+
+// Featured Speakers
+
+.featured-speakers {
+
+  &-title {
+    text-align: center;
+    margin: 8rem 0;
+    position: relative;
+    width: 100%;
+    color: black;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -1rem;
+      left: 62rem;
+      border: 1px solid $color-tertiary;
+      width: 6%;
+    }
+  }
+
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 10rem;
+    margin-left: 13rem;
+  }
+
+  &-card {
+    display: flex;
+    margin-left: 7rem;
+
+    &--1 {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+
+    &--2 {
+      grid-column: 2 / 2;
+      grid-row: 1 / 2;
+    }
+
+    &--3 {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+    }
+
+    &--4 {
+      grid-column: 2 / 2;
+      grid-row: 2 / 3;
+    }
+
+    &--5 {
+      grid-column: 1 / 2;
+      grid-row: 3 / 3;
+    }
+
+    &--6 {
+      grid-column: 2 / 2;
+      grid-row: 3 / 3;
+    }
+
+    &--background {
+      width: 8rem;
+      height: 8rem;
+
+      background-image: repeating-linear-gradient(to bottom, transparent, transparent 5px, $color-white 5px, $color-white 10px), repeating-linear-gradient(to right, $color-primary, $color-primary 5px, $color-white 5px, $color-white 10px);
+      transform: translate(-3rem, -2rem);
+
+      position: absolute;
+      z-index: 2;
+    }
+
+    &--img {
+      position: absolute;
+      z-index: 5;
+    }
+
+    &-text {
+      margin-left: 15rem;
+    }
+
+    &--author {
+      font-size: $font-size-small;
+      margin-top: 1rem;
+    }
+
+    &--job {
+      color: $color-tertiary;
+      font-style: italic;
+      font-size: 1rem;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -1rem;
+        left: 0;
+        border: 1px solid $color-primary;
+        width: 6%;
+      }
+    }
+
+    &--studies {
+      font-size: 1.2rem;
+      margin-top: 1.5rem;
+      word-break: break-word;
+      width: 25vw;
+    }
   }
 }
