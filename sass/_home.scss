@@ -147,7 +147,7 @@
       left: 43rem;
       border: 1px solid $color-tertiary;
       width: 6%;
-      
+
       @include respond(tab-port) {
         display: none;
       }
@@ -157,7 +157,7 @@
   &-container {
     width: 80vw;
     transform: translateX(-5rem);
-    
+
     @include respond(tab-port) {
       flex-direction: column;
     }
