@@ -30,8 +30,7 @@
         position: absolute;
         left: -5rem;
         top: 10rem;
-      }
-      
+      }      
     }
 
     &--primary {
@@ -43,6 +42,10 @@
       color: transparent;
       padding-right: 20rem;
       position: relative;
+
+      @include respond(phone) {
+        font-size: 2rem;
+      }
     }
 
     &--paragraph {
@@ -64,6 +67,10 @@
       .dogecoin-svg {
         position: absolute;
         right: -10rem;
+
+        @include respond(phone) {
+          display: none;
+        }
       }      
     }
     
@@ -74,6 +81,10 @@
       margin-left: 3rem;
       position: relative;
 
+      @include respond(phone) {
+        font-size: 1.5rem;
+      }
+
       .xrp-svg {
         position: absolute;
         left: -8rem;
@@ -82,7 +93,11 @@
       
       .litecoin-svg {
         position: absolute;
-        left: 35rem;        
+        left: 35rem;
+        
+        @include respond(phone) {
+          display: none;
+        }
       }
     }
 
@@ -91,6 +106,10 @@
       margin-left: 3rem;
       position: relative;
       width: 45%;
+
+      @include respond(phone) {
+        font-size: $font-size-small;
+      }
 
       .tether-svg {
         position: absolute;
@@ -112,6 +131,10 @@
 
   padding: 10rem 20rem;
 
+  @include respond(phone) {
+    padding: 10rem 10rem;
+  }
+
   &-title {
     text-align: center;
     margin-bottom: 5rem;
@@ -126,12 +149,20 @@
       left: 43rem;
       border: 1px solid $color-tertiary;
       width: 6%;
+      
+      @include respond(tab-port) {
+        display: none;
+      }
     }
   }
 
   &-container {
     width: 80vw;
     transform: translateX(-5rem);
+    
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
   }
 
   &-card {
@@ -144,6 +175,11 @@
     
     &:not(:last-child) {
       border-right: 1px solid black;
+
+      @include respond(tab-port) {
+        border-right: none;
+        border-bottom: 1px solid black;
+      }
     }
 
     &:hover {
@@ -194,6 +230,10 @@
       left: 62rem;
       border: 1px solid $color-tertiary;
       width: 6%;
+
+      @include respond(tab-port) {
+        display: none;
+      }
     }
   }
 
@@ -202,7 +242,17 @@
     grid-template-columns: repeat(2, max-content);
     grid-template-rows: repeat(3, 1fr);
     grid-row-gap: 10rem;
-    margin-left: 13rem;
+    margin-left: 8vw;
+
+    @include respond(tab-land) {
+      margin-left: 3vw;
+    }
+
+    @include respond(tab-port) {
+      display: flex;
+      flex-direction: column;
+      margin-left: 6vw;
+    }
   }
 
   &-card {
@@ -257,6 +307,10 @@
 
     &-text {
       margin-left: 15rem;
+
+      @include respond(tab-port) {
+        margin-left: 17rem;
+      }
     }
 
     &--author {
@@ -285,6 +339,10 @@
       margin-top: 1.5rem;
       word-break: break-word;
       width: 25vw;
+
+      @include respond(tab-land) {
+        font-size: $font-size-small;
+      }
     }
   }
 }
@@ -311,6 +369,10 @@
         left: 54rem;
         border: 1px solid $color-tertiary;
         width: 6%;
+
+        @include respond(tab-port) {
+          display: none;
+        }
       }
     }
 
@@ -318,10 +380,21 @@
       justify-content: center;
       margin-top: 8rem;
 
+      @include respond(phone) {
+        flex-direction: column;
+        align-items: center;
+      }
+
       &--name {
         color: $color-primary;
         font-size: $font-size-large;
         margin-right: 5rem;
+
+        @include respond(phone) {
+          font-size: $font-size-medium;
+          margin-bottom: 2rem;
+          margin-right: 0;
+        }
       }
     }
   }
@@ -329,6 +402,10 @@
   &-bottom {
     margin-top: 10rem;
     padding: 0 10rem;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
 
     &-logo {
       align-items: center;
@@ -350,6 +427,10 @@
       font-size: $font-size-small;
       justify-self: center;
       margin-left: 10rem;
+
+      @include respond(phone) {
+        display: none;
+      }
     }
   }
 }

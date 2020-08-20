@@ -8,6 +8,14 @@
 
 html {
   font-size: 62.5%;
+
+  @include respond(phone) {//width < 768px?
+    font-size: 56.25%; //1rem = 9px, 9/16 = 56.25%
+  }
+
+  @include respond(tab-port) {//width < 1200px?
+    font-size: 50%; //1rem = 8px, 8/16 = 50%
+  }
 }
 
 body {

@@ -31,6 +31,11 @@
 .navbar-ul-bottom {
   align-items: center;
   width: 100%;
+
+  @include respond(phone) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .nav-item-left {
@@ -40,6 +45,10 @@
 .blockchain-logo {
   width: 3rem;
   height: 3rem;
+
+  @include respond(phone) {
+    margin-left: 2rem;
+  }
 }
 
 .blockchain-conference {
@@ -48,6 +57,10 @@
   font-weight: 700;
   width: 100%;
   margin-left: calc(-2vw + (100 - 130) * ((100vw - 768px) / (1326 - 768)));
+
+  @include respond(phone) {
+    margin-left: 2rem;
+  }
 }
 
 .bc-date {
@@ -58,11 +71,20 @@
   width: 100%;
   justify-content: space-between;
   font-size: $font-size-small;
+
+  @include respond(phone) {
+    flex-direction: column;
+    justify-content: start;
+  }
 }
 
 .nav-item-right {
   margin-right: calc(2vw + (120 - 100) * ((100vw - 992px) / (1326 - 992)));
   margin-left: calc(-25vw + (100 - 80) * ((100vw - 992px) / (1326 - 992)));
+
+  @include respond(phone) {
+    margin: 0;
+  }
 }
 
 .item-rigth-nav-link-active,

@@ -7,6 +7,12 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 48em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
 
 body {
   box-sizing: border-box;
@@ -85,6 +91,10 @@ body {
 .navbar-ul-bottom {
   align-items: center;
   width: 100%; }
+  @media only screen and (max-width: 48em) {
+    .navbar-ul-bottom {
+      flex-direction: column;
+      align-items: flex-start; } }
 
 .nav-item-left {
   width: 20%; }
@@ -92,6 +102,9 @@ body {
 .blockchain-logo {
   width: 3rem;
   height: 3rem; }
+  @media only screen and (max-width: 48em) {
+    .blockchain-logo {
+      margin-left: 2rem; } }
 
 .blockchain-conference {
   font-family: "Lato";
@@ -99,6 +112,9 @@ body {
   font-weight: 700;
   width: 100%;
   margin-left: calc(-2vw + (100 - 130) * ((100vw - 768px) / (1326 - 768))); }
+  @media only screen and (max-width: 48em) {
+    .blockchain-conference {
+      margin-left: 2rem; } }
 
 .bc-date {
   margin-top: -1rem; }
@@ -107,10 +123,17 @@ body {
   width: 100%;
   justify-content: space-between;
   font-size: 1.5rem; }
+  @media only screen and (max-width: 48em) {
+    .nav-items-right {
+      flex-direction: column;
+      justify-content: start; } }
 
 .nav-item-right {
   margin-right: calc(2vw + (120 - 100) * ((100vw - 992px) / (1326 - 992)));
   margin-left: calc(-25vw + (100 - 80) * ((100vw - 992px) / (1326 - 992))); }
+  @media only screen and (max-width: 48em) {
+    .nav-item-right {
+      margin: 0; } }
 
 .item-rigth-nav-link-active,
 .item-rigth-nav-link-active:active {
@@ -163,6 +186,9 @@ body {
       color: transparent;
       padding-right: 20rem;
       position: relative; }
+      @media only screen and (max-width: 48em) {
+        .heading-box--primary {
+          font-size: 2rem; } }
     .heading-box--paragraph {
       padding-top: 3rem;
       font-size: 1.5rem;
@@ -179,12 +205,18 @@ body {
       .heading-box--paragraph .dogecoin-svg {
         position: absolute;
         right: -10rem; }
+        @media only screen and (max-width: 48em) {
+          .heading-box--paragraph .dogecoin-svg {
+            display: none; } }
     .heading-box--date {
       font-size: 2.5rem;
       font-weight: 900;
       margin: 5rem 0 2rem 0;
       margin-left: 3rem;
       position: relative; }
+      @media only screen and (max-width: 48em) {
+        .heading-box--date {
+          font-size: 1.5rem; } }
       .heading-box--date .xrp-svg {
         position: absolute;
         left: -8rem;
@@ -192,11 +224,17 @@ body {
       .heading-box--date .litecoin-svg {
         position: absolute;
         left: 35rem; }
+        @media only screen and (max-width: 48em) {
+          .heading-box--date .litecoin-svg {
+            display: none; } }
     .heading-box--location {
       font-size: 2rem;
       margin-left: 3rem;
       position: relative;
       width: 45%; }
+      @media only screen and (max-width: 48em) {
+        .heading-box--location {
+          font-size: 1.5rem; } }
       .heading-box--location .tether-svg {
         position: absolute;
         right: -5rem; }
@@ -207,6 +245,9 @@ body {
 .main-program {
   background-image: repeating-linear-gradient(to bottom, transparent, transparent 5px, #272a31 5px, #272a31 10px), repeating-linear-gradient(to right, rgba(39, 42, 49, 0.884), rgba(39, 42, 49, 0.884) 5px, #272a31 5px, #272a31 10px);
   padding: 10rem 20rem; }
+  @media only screen and (max-width: 48em) {
+    .main-program {
+      padding: 10rem 10rem; } }
   .main-program-title {
     text-align: center;
     margin-bottom: 5rem;
@@ -220,9 +261,15 @@ body {
       left: 43rem;
       border: 1px solid #ec5242;
       width: 6%; }
+      @media only screen and (max-width: 56.25em) {
+        .main-program-title::after {
+          display: none; } }
   .main-program-container {
     width: 80vw;
     transform: translateX(-5rem); }
+    @media only screen and (max-width: 56.25em) {
+      .main-program-container {
+        flex-direction: column; } }
   .main-program-card {
     background-color: rgba(54, 60, 75, 0.699);
     color: #fff;
@@ -232,6 +279,10 @@ body {
     cursor: pointer; }
     .main-program-card:not(:last-child) {
       border-right: 1px solid black; }
+      @media only screen and (max-width: 56.25em) {
+        .main-program-card:not(:last-child) {
+          border-right: none;
+          border-bottom: 1px solid black; } }
     .main-program-card:hover {
       border: 3px solid #fff; }
     .main-program-card--img {
@@ -264,13 +315,24 @@ body {
     left: 62rem;
     border: 1px solid #ec5242;
     width: 6%; }
+    @media only screen and (max-width: 56.25em) {
+      .featured-speakers-title::after {
+        display: none; } }
 
 .featured-speakers-container {
   display: grid;
   grid-template-columns: repeat(2, max-content);
   grid-template-rows: repeat(3, 1fr);
   grid-row-gap: 10rem;
-  margin-left: 13rem; }
+  margin-left: 8vw; }
+  @media only screen and (max-width: 75em) {
+    .featured-speakers-container {
+      margin-left: 3vw; } }
+  @media only screen and (max-width: 56.25em) {
+    .featured-speakers-container {
+      display: flex;
+      flex-direction: column;
+      margin-left: 6vw; } }
 
 .featured-speakers-card {
   display: flex;
@@ -305,6 +367,9 @@ body {
     z-index: 5; }
   .featured-speakers-card-text {
     margin-left: 15rem; }
+    @media only screen and (max-width: 56.25em) {
+      .featured-speakers-card-text {
+        margin-left: 17rem; } }
   .featured-speakers-card--author {
     font-size: 1.5rem;
     margin-top: 1rem; }
@@ -325,6 +390,9 @@ body {
     margin-top: 1.5rem;
     word-break: break-word;
     width: 25vw; }
+    @media only screen and (max-width: 75em) {
+      .featured-speakers-card--studies {
+        font-size: 1.5rem; } }
 
 .footer {
   margin-top: 8rem; }
@@ -343,16 +411,31 @@ body {
         left: 54rem;
         border: 1px solid #ec5242;
         width: 6%; }
+        @media only screen and (max-width: 56.25em) {
+          .footer-top--title::after {
+            display: none; } }
     .footer-top-partners {
       justify-content: center;
       margin-top: 8rem; }
+      @media only screen and (max-width: 48em) {
+        .footer-top-partners {
+          flex-direction: column;
+          align-items: center; } }
       .footer-top-partners--name {
         color: #d3d3d3;
         font-size: 3rem;
         margin-right: 5rem; }
+        @media only screen and (max-width: 48em) {
+          .footer-top-partners--name {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            margin-right: 0; } }
   .footer-bottom {
     margin-top: 10rem;
     padding: 0 10rem; }
+    @media only screen and (max-width: 48em) {
+      .footer-bottom {
+        flex-direction: column; } }
     .footer-bottom-logo {
       align-items: center; }
       .footer-bottom-logo--img {
@@ -367,6 +450,9 @@ body {
       font-size: 1.5rem;
       justify-self: center;
       margin-left: 10rem; }
+      @media only screen and (max-width: 48em) {
+        .footer-bottom-text {
+          display: none; } }
 
 .tickets-header {
   font-family: "Lato";
