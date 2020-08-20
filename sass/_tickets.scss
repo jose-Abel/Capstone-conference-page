@@ -21,6 +21,10 @@
       left: 8rem;
       border: 1px solid $color-tertiary;
       width: 15%;
+
+      @include respond(tab-land) {
+        display: none;
+      }
     }
   }
 
@@ -30,6 +34,10 @@
     width: 40%;
     padding: 1rem;
     border-radius: 2rem;
+
+    @include respond(tab-land) {
+      width: 60%;
+    }
 
     &-square {
       width: 2rem;
@@ -61,15 +69,27 @@
     position: relative;
     background: linear-gradient(white, white), 
                 linear-gradient(60deg, red 0%, red 3.5%, white 3.5%, white 7%, blue 7%, blue 10.5%, red 10.5%, red 14%, white 14%, white 17.5%, blue 17.5%, blue 21%, red 21%, red 25%, white 25%, white 28.5%, blue 28.5%, blue 32%, red 32%, red 35.5%, white 35.5%, white 39%, blue 39%, blue 42.5%, red 42.5%, red 46%, white 46%, white 50%, blue 50%, blue 53.5%, red 53.5%, red 57%, white 57%, white 60.5%, blue 60.5%, blue 64%, red 64%, red 67.5%, white 67.5%, white 71%, blue 71%, blue 75%, red 75%, red 78.5%, white 78.5%, white 82%, red 82%, red 85.5%, blue 85.5%, blue 89%, white 89%, white 92.5%, red 92.5%, red 96%, blue 96%, blue 100%);
-    padding: 10px 20px;
+    padding: 10px 10px;
     border-radius: 20px;
     background-origin: content-box, padding-box;
     background-clip: content-box, padding-box;
+
+    @include respond(tab-land) {
+      padding: 4px 4px;
+    }
   }
 
   &-column {
     padding: 4rem;
     font-size: $font-size-small;
+
+    @include respond(tab-land) {
+      padding: 2rem;
+    }
+
+    @include respond(phone) {
+      padding: 1rem;
+    }
 
     &--1 {
       grid-column: date-start / date-end;
@@ -194,10 +214,6 @@
       grid-column: affiliate-partner-start / affiliate-partner-end;
       grid-row: 4 / 4;
     }
-
-    &--input {
-      
-    }
   }
 }
 
@@ -216,6 +232,10 @@
     height: 8rem;
     background-color: $color-tertiary;
     transform: translate(63rem, -4rem) rotateZ(45deg);
+
+    @include respond(tab-land) {
+      display: none;
+    }
   }
 
   &-title {
@@ -229,6 +249,10 @@
       left: 8rem;
       border: 1px solid $color-tertiary;
       width: 15%;
+
+      @include respond(tab-land) {
+        display: none;
+      }
     }
   }
 
@@ -239,6 +263,10 @@
     padding: 1rem;
     border-radius: 2rem;
     margin-bottom: 4rem;
+
+    @include respond(tab-land) {
+      width: 80%;
+    }
 
     &-square {
       width: 2rem;
@@ -275,11 +303,20 @@
       width: 100%;
       text-align: center;
       padding: 2rem;
+
+      @include respond(phone) {
+        padding: 1rem;
+      }
     }
 
     &-box {
       margin-right: 6rem;
       padding: 0 2rem 2rem 2rem;
+
+      @include respond(phone) {
+        margin-right: 2rem;
+        padding: 0;
+      }
     }
 
     &-text {

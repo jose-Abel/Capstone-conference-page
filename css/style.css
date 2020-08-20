@@ -473,12 +473,18 @@ body {
       left: 8rem;
       border: 1px solid #ec5242;
       width: 15%; }
+      @media only screen and (max-width: 75em) {
+        .tickets-header-title::after {
+          display: none; } }
   .tickets-header-pill {
     justify-content: center;
     border: 1px solid #d3d3d3;
     width: 40%;
     padding: 1rem;
     border-radius: 2rem; }
+    @media only screen and (max-width: 75em) {
+      .tickets-header-pill {
+        width: 60%; } }
     .tickets-header-pill-square {
       width: 2rem;
       height: 2rem;
@@ -501,13 +507,22 @@ body {
     grid-template-columns: [date-start] 1fr [date-end one-day-ticket-start] 1fr [one-day-ticket-end two-day-ticket-start-first] 1fr [two-day-ticket-end-first two-day-ticket-start-second] 1fr [two-day-ticket-end-second affiliate-partner-start] 1fr [affiliate-partner-end];
     position: relative;
     background: linear-gradient(white, white), linear-gradient(60deg, red 0%, red 3.5%, white 3.5%, white 7%, blue 7%, blue 10.5%, red 10.5%, red 14%, white 14%, white 17.5%, blue 17.5%, blue 21%, red 21%, red 25%, white 25%, white 28.5%, blue 28.5%, blue 32%, red 32%, red 35.5%, white 35.5%, white 39%, blue 39%, blue 42.5%, red 42.5%, red 46%, white 46%, white 50%, blue 50%, blue 53.5%, red 53.5%, red 57%, white 57%, white 60.5%, blue 60.5%, blue 64%, red 64%, red 67.5%, white 67.5%, white 71%, blue 71%, blue 75%, red 75%, red 78.5%, white 78.5%, white 82%, red 82%, red 85.5%, blue 85.5%, blue 89%, white 89%, white 92.5%, red 92.5%, red 96%, blue 96%, blue 100%);
-    padding: 10px 20px;
+    padding: 10px 10px;
     border-radius: 20px;
     background-origin: content-box, padding-box;
     background-clip: content-box, padding-box; }
+    @media only screen and (max-width: 75em) {
+      .tickets-header-ticket {
+        padding: 4px 4px; } }
   .tickets-header-column {
     padding: 4rem;
     font-size: 1.5rem; }
+    @media only screen and (max-width: 75em) {
+      .tickets-header-column {
+        padding: 2rem; } }
+    @media only screen and (max-width: 48em) {
+      .tickets-header-column {
+        padding: 1rem; } }
     .tickets-header-column--1 {
       grid-column: date-start / date-end;
       grid-row: 1 / 2;
@@ -606,6 +621,9 @@ body {
     height: 8rem;
     background-color: #ec5242;
     transform: translate(63rem, -4rem) rotateZ(45deg); }
+    @media only screen and (max-width: 75em) {
+      .tickets-lunch-square {
+        display: none; } }
   .tickets-lunch-title {
     margin: 5rem 0;
     position: relative; }
@@ -616,6 +634,9 @@ body {
       left: 8rem;
       border: 1px solid #ec5242;
       width: 15%; }
+      @media only screen and (max-width: 75em) {
+        .tickets-lunch-title::after {
+          display: none; } }
   .tickets-lunch-pill {
     justify-content: center;
     border: 1px solid #d3d3d3;
@@ -623,6 +644,9 @@ body {
     padding: 1rem;
     border-radius: 2rem;
     margin-bottom: 4rem; }
+    @media only screen and (max-width: 75em) {
+      .tickets-lunch-pill {
+        width: 80%; } }
     .tickets-lunch-pill-square {
       width: 2rem;
       height: 2rem;
@@ -650,9 +674,16 @@ body {
       width: 100%;
       text-align: center;
       padding: 2rem; }
+      @media only screen and (max-width: 48em) {
+        .tickets-lunch-menu-title {
+          padding: 1rem; } }
     .tickets-lunch-menu-box {
       margin-right: 6rem;
       padding: 0 2rem 2rem 2rem; }
+      @media only screen and (max-width: 48em) {
+        .tickets-lunch-menu-box {
+          margin-right: 2rem;
+          padding: 0; } }
     .tickets-lunch-menu-text {
       font-size: 1.5rem; }
   .tickets-lunch-submit-ticket {
@@ -670,6 +701,12 @@ body {
   font-family: "Lato";
   padding: 0 30rem;
   background-color: rgba(211, 211, 211, 0.075); }
+  @media only screen and (max-width: 75em) {
+    .about-header {
+      padding: 0 20rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .about-header {
+      padding: 0 10rem; } }
   .about-header-title {
     padding-top: 5rem;
     font-size: 6rem;
@@ -679,6 +716,13 @@ body {
     margin-bottom: 6rem;
     position: relative;
     text-transform: uppercase; }
+    @media only screen and (max-width: 75em) {
+      .about-header-title {
+        font-size: 4rem; } }
+    @media only screen and (max-width: 48em) {
+      .about-header-title {
+        font-size: 2rem;
+        margin-left: 3rem; } }
     .about-header-title::after {
       content: "";
       position: absolute;
@@ -686,6 +730,9 @@ body {
       left: 32rem;
       border: 1px solid #ec5242;
       width: 6%; }
+      @media only screen and (max-width: 75em) {
+        .about-header-title::after {
+          display: none; } }
   .about-header-text {
     background-color: #fff;
     border: 1px solid #d3d3d3;
@@ -724,16 +771,28 @@ body {
       left: 32rem;
       border: 1px solid #ec5242;
       width: 6%; }
+      @media only screen and (max-width: 75em) {
+        .about-section-bclogo--title::after {
+          display: none; } }
   .about-section-bclogo--text {
     padding: 0 25rem;
     font-size: 1.5rem;
     margin-bottom: 5rem; }
+    @media only screen and (max-width: 48em) {
+      .about-section-bclogo--text {
+        padding: 0 10rem; } }
   .about-section-bclogo-box {
     align-items: center;
     justify-content: center;
     border: 1px solid #d3d3d3;
     width: 40%;
     padding: 5rem; }
+    @media only screen and (max-width: 75em) {
+      .about-section-bclogo-box {
+        padding: 3rem; } }
+    @media only screen and (max-width: 48em) {
+      .about-section-bclogo-box {
+        width: 90%; } }
   .about-section-bclogo--img {
     width: 10rem;
     height: 10rem; }
@@ -761,10 +820,18 @@ body {
       left: 62rem;
       border: 1px solid #ec5242;
       width: 6%; }
+      @media only screen and (max-width: 75em) {
+        .about-section-past--title::after {
+          display: none; } }
   .about-section-past--paragraph {
     font-size: 2rem; }
   .about-section-past-imgs-box {
     justify-content: center; }
+    @media only screen and (max-width: 48em) {
+      .about-section-past-imgs-box {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem; } }
   .about-section-past-img {
     margin-right: 5rem;
     align-items: center;
@@ -775,20 +842,35 @@ body {
       background-size: cover;
       width: 30vw;
       height: 30vh; }
+      @media only screen and (max-width: 48em) {
+        .about-section-past-img--1 {
+          margin-bottom: 2rem;
+          width: 60vw;
+          height: 60vh; } }
     .about-section-past-img--2 {
       background: linear-gradient(rgba(236, 83, 66, 0.733), rgba(236, 83, 66, 0.733), rgba(236, 83, 66, 0.733)), url(../img/blockchain-conference-2018.jpg);
       background-size: cover;
       width: 30vw;
       height: 30vh; }
+      @media only screen and (max-width: 48em) {
+        .about-section-past-img--2 {
+          width: 60vw;
+          height: 60vh; } }
     .about-section-past-img--year {
       display: block;
       color: #fff;
       font-size: 3rem;
       margin: 4rem 0 2rem 0; }
+      @media only screen and (max-width: 48em) {
+        .about-section-past-img--year {
+          font-size: 3.5rem; } }
     .about-section-past-img--title {
       display: block;
       color: #fff;
       font-size: 1.5rem; }
+      @media only screen and (max-width: 48em) {
+        .about-section-past-img--title {
+          font-size: 2rem; } }
 
 .about-footer {
   color: #fff; }

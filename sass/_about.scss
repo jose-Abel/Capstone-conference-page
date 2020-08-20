@@ -5,6 +5,14 @@
   padding: 0 30rem;
   background-color: $color-primary-ligther;
 
+  @include respond(tab-land) {
+    padding: 0 20rem;
+  }
+
+  @include respond(tab-port) {
+    padding: 0 10rem;
+  }
+
   &-title {
     padding-top: 5rem;
     font-size: 6rem;
@@ -15,6 +23,15 @@
     position: relative;
     text-transform: uppercase;
 
+    @include respond(tab-land) {
+      font-size: 4rem;
+    }
+
+    @include respond(phone) {
+      font-size: 2rem;
+      margin-left: 3rem;
+    }
+
     &::after {
       content: "";
       position: absolute;
@@ -22,6 +39,10 @@
       left: 32rem;
       border: 1px solid $color-tertiary;
       width: 6%;
+
+      @include respond(tab-land) {
+        display: none;
+      }
     }
   }
 
@@ -75,6 +96,10 @@
       left: 32rem;
       border: 1px solid $color-tertiary;
       width: 6%;
+
+      @include respond(tab-land) {
+        display: none;
+      }
     }
   }
 
@@ -82,6 +107,10 @@
     padding: 0 25rem;
     font-size: $font-size-small;
     margin-bottom: 5rem;
+
+    @include respond(phone) {
+      padding: 0 10rem;
+    }
   }
 
   &-box {
@@ -90,6 +119,14 @@
     border: 1px solid $color-primary;
     width: 40%;
     padding: 5rem;
+
+    @include respond(tab-land) {
+      padding: 3rem;
+    }
+
+    @include respond(phone) {
+      width: 90%;
+    }
   }
 
   &--img {
@@ -131,6 +168,10 @@
       left: 62rem;
       border: 1px solid $color-tertiary;
       width: 6%;
+
+      @include respond(tab-land) {
+        display: none;
+      }
     }
   }
 
@@ -140,6 +181,12 @@
 
   &-imgs-box {
     justify-content: center;
+
+    @include respond(phone) {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
   }
 
   &-img {
@@ -153,6 +200,12 @@
       background-size: cover;
       width: 30vw;
       height: 30vh;
+
+      @include respond(phone) {
+        margin-bottom: 2rem;
+        width: 60vw;
+        height: 60vh;
+      }
     }
 
     &--2 {
@@ -160,6 +213,11 @@
       background-size: cover;
       width: 30vw;
       height: 30vh;
+
+      @include respond(phone) {
+        width: 60vw;
+        height: 60vh;
+      }
     }
 
     &--year {
@@ -167,12 +225,20 @@
       color: $color-white;
       font-size: $font-size-large;
       margin: 4rem 0 2rem 0;
+
+      @include respond(phone) {
+        font-size: 3.5rem;
+      }
     }
 
     &--title {
       display: block;
       color: $color-white;
       font-size: $font-size-small;
+
+      @include respond(phone) {
+        font-size: $font-size-medium;
+      }
     }
   }
 }
