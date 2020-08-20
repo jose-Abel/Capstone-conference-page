@@ -14,7 +14,7 @@ The Microverse Capstone project for the HTML and CSS module where I got assigned
 - Use of the colors #272A31, #EC5242 #D3D3D3.
 
 
-<!-- ![screenshot](./app_screenshot.png) -->
+![screenshot](./app_screenshot.png)
 
 
 ## Built With
@@ -38,6 +38,7 @@ You can clone this code anytime and load the HTML on your browser, because it ha
 
 
 ## Live version
+https://tender-goodall-645fd2.netlify.app/
 
 
 ### Setup
