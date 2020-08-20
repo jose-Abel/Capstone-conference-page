@@ -12,7 +12,7 @@
 
   &-box {
     margin: 0 0 0 10rem;
-    font-family: "Lato" sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 900;
     transform: translateY(-5rem);
 
@@ -30,7 +30,7 @@
         position: absolute;
         left: -5rem;
         top: 10rem;
-      }     
+      }
     }
 
     &--primary {
@@ -72,7 +72,6 @@
         }
       }
     }
-    
     &--date {
       font-size: 2.5rem;
       font-weight: 900;
@@ -89,11 +88,9 @@
         left: -8rem;
         top: 3rem;
       }
-      
       .litecoin-svg {
         position: absolute;
         left: 35rem;
-        
         @include respond(phone) {
           display: none;
         }
@@ -173,7 +170,6 @@
     
     &:not(:last-child) {
       border-right: 1px solid black;
-
       @include respond(tab-port) {
         border-right: none;
         border-bottom: 1px solid black;
@@ -290,10 +286,8 @@
     &--background {
       width: 8rem;
       height: 8rem;
-
       background-image: repeating-linear-gradient(to bottom, transparent, transparent 5px, $color-white 5px, $color-white 10px), repeating-linear-gradient(to right, $color-primary, $color-primary 5px, $color-white 5px, $color-white 10px);
       transform: translate(-3rem, -2rem);
-
       position: absolute;
       z-index: 2;
     }
@@ -415,7 +409,7 @@
 
       &--title {
         font-size: $font-size-medium;
-        font-family: "Lato" sans-serif;
+        font-family: "Lato", sans-serif;
         font-weight: 900;
         margin-left: 3rem;
       }
