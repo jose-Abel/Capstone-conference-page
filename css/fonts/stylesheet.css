@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Cocogoose Pro';
+    src: url('CocogoosePro-Thin.eot');
+    src: url('CocogoosePro-Thin.eot?#iefix') format('embedded-opentype'),
+        url('CocogoosePro-Thin.woff2') format('woff2'),
+        url('CocogoosePro-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'COCOGOOSE';
+    src: url('COCOGOOSE-UltraLight.eot');
+    src: url('COCOGOOSE-UltraLight.eot?#iefix') format('embedded-opentype'),
+        url('COCOGOOSE-UltraLight.woff2') format('woff2'),
+        url('COCOGOOSE-UltraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'COCOGOOSE';
+    src: url('COCOGOOSE-DemiBold.eot');
+    src: url('COCOGOOSE-DemiBold.eot?#iefix') format('embedded-opentype'),
+        url('COCOGOOSE-DemiBold.woff2') format('woff2'),
+        url('COCOGOOSE-DemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cocogoose';
+    src: url('Cocogoose.eot');
+    src: url('Cocogoose.eot?#iefix') format('embedded-opentype'),
+        url('Cocogoose.woff2') format('woff2'),
+        url('Cocogoose.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cocogoose';
+    src: url('Cocogoose-Light.eot');
+    src: url('Cocogoose-Light.eot?#iefix') format('embedded-opentype'),
+        url('Cocogoose-Light.woff2') format('woff2'),
+        url('Cocogoose-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
