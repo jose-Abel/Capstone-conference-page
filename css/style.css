@@ -1009,7 +1009,7 @@ body {
   border: none;
 }
 
-.tickets-lunch-submit-ticket:focus, 
+.tickets-lunch-submit-ticket:focus,
 .tickets-lunch-submit-ticket:active {
   outline: none;
   background-color: #c54537;

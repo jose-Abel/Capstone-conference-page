@@ -93,7 +93,7 @@
       .litecoin-svg {
         position: absolute;
         left: 35rem;
-        
+
         @include respond(phone) {
           display: none;
         }
@@ -170,9 +170,10 @@
     align-items: center;
     padding: 2rem;
     cursor: pointer;
-    
+
     &:not(:last-child) {
       border-right: 1px solid black;
+
       @include respond(tab-port) {
         border-right: none;
         border-bottom: 1px solid black;
@@ -212,7 +213,6 @@
 // FEATURED SPEAKERS
 
 .featured-speakers {
-
   &-title {
     text-align: center;
     margin: 8rem 0;
