@@ -2,25 +2,25 @@
 
   @if $breakpoint == phone {
     @media only screen and (max-width: 48em) {//768px
-      @content
-    }; 
+      @content;
+    }
   }
 
   @if $breakpoint == tab-port {
     @media only screen and (max-width: 56.25em) { //900px
-      @content    
-    }; 
+      @content;
+    }
   }
 
   @if $breakpoint == tab-land {
     @media only screen and (max-width: 75em) {//1200px
-      @content
-    }; 
+      @content;
+    }
   }
 
   @if $breakpoint == pc {
       @media only screen and (min-width: 122.5em) {//1800px
-      @content
-    };
+      @content;
+    }
   }
 }

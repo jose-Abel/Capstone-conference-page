@@ -12,7 +12,7 @@
 
   &-box {
     margin: 0 0 0 10rem;
-    font-family: "Lato";
+    font-family: "Lato" sans-serif;
     font-weight: 900;
     transform: translateY(-5rem);
 
@@ -30,7 +30,7 @@
         position: absolute;
         left: -5rem;
         top: 10rem;
-      }      
+      }     
     }
 
     &--primary {
@@ -49,10 +49,9 @@
     }
 
     &--paragraph {
-      padding-top: 3rem;
       font-size: $font-size-small;
       background-color: $color-white;
-      padding: 4rem;
+      padding: 7rem 4rem 4rem 4rem;
       width: 70%;
       position: relative;
       z-index: 5;
@@ -71,7 +70,7 @@
         @include respond(phone) {
           display: none;
         }
-      }      
+      }
     }
     
     &--date {
@@ -128,7 +127,6 @@
 
 .main-program {
   background-image: repeating-linear-gradient(to bottom, transparent, transparent 5px, $color-secondary 5px, $color-secondary 10px), repeating-linear-gradient(to right, $color-secondary-lighter, $color-secondary-lighter 5px, $color-secondary 5px, $color-secondary 10px);
-
   padding: 10rem 20rem;
 
   @include respond(phone) {
@@ -417,7 +415,7 @@
 
       &--title {
         font-size: $font-size-medium;
-        font-family: "Lato";
+        font-family: "Lato" sans-serif;
         font-weight: 900;
         margin-left: 3rem;
       }

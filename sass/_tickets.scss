@@ -1,7 +1,7 @@
-// HEADER 
+// HEADER
 
 .tickets-header {
-  font-family: "Lato";
+  font-family: "Lato" sans-serif;
   background-color: $color-primary-ligther;
   text-align: center;
   flex-direction: column;
@@ -67,8 +67,7 @@
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: [date-start] 1fr [date-end one-day-ticket-start] 1fr [one-day-ticket-end two-day-ticket-start-first] 1fr [two-day-ticket-end-first two-day-ticket-start-second] 1fr [two-day-ticket-end-second affiliate-partner-start] 1fr [affiliate-partner-end];
     position: relative;
-    background: linear-gradient(white, white), 
-                linear-gradient(60deg, red 0%, red 3.5%, white 3.5%, white 7%, blue 7%, blue 10.5%, red 10.5%, red 14%, white 14%, white 17.5%, blue 17.5%, blue 21%, red 21%, red 25%, white 25%, white 28.5%, blue 28.5%, blue 32%, red 32%, red 35.5%, white 35.5%, white 39%, blue 39%, blue 42.5%, red 42.5%, red 46%, white 46%, white 50%, blue 50%, blue 53.5%, red 53.5%, red 57%, white 57%, white 60.5%, blue 60.5%, blue 64%, red 64%, red 67.5%, white 67.5%, white 71%, blue 71%, blue 75%, red 75%, red 78.5%, white 78.5%, white 82%, red 82%, red 85.5%, blue 85.5%, blue 89%, white 89%, white 92.5%, red 92.5%, red 96%, blue 96%, blue 100%);
+    background: linear-gradient(white, white), linear-gradient(60deg, red 0%, red 3.5%, white 3.5%, white 7%, blue 7%, blue 10.5%, red 10.5%, red 14%, white 14%, white 17.5%, blue 17.5%, blue 21%, red 21%, red 25%, white 25%, white 28.5%, blue 28.5%, blue 32%, red 32%, red 35.5%, white 35.5%, white 39%, blue 39%, blue 42.5%, red 42.5%, red 46%, white 46%, white 50%, blue 50%, blue 53.5%, red 53.5%, red 57%, white 57%, white 60.5%, blue 60.5%, blue 64%, red 64%, red 67.5%, white 67.5%, white 71%, blue 71%, blue 75%, red 75%, red 78.5%, white 78.5%, white 82%, red 82%, red 85.5%, blue 85.5%, blue 89%, white 89%, white 92.5%, red 92.5%, red 96%, blue 96%, blue 100%);
     padding: 10px 10px;
     border-radius: 20px;
     background-origin: content-box, padding-box;
@@ -220,7 +219,7 @@
 // LUNCH SECTION
 
 .tickets-main {
-  font-family: "Lato";
+  font-family: "Lato" sans-serif;
 }
 
 .tickets-lunch {
