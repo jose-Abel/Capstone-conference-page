@@ -368,6 +368,146 @@ body {
       justify-self: center;
       margin-left: 10rem; }
 
+.tickets-header {
+  font-family: "Lato";
+  background-color: rgba(211, 211, 211, 0.075);
+  text-align: center;
+  flex-direction: column;
+  align-items: center; }
+  .tickets-header-title {
+    padding-top: 10rem;
+    position: relative;
+    margin-bottom: 5rem;
+    font-size: 3rem;
+    font-weight: 900; }
+    .tickets-header-title::after {
+      content: "";
+      position: absolute;
+      bottom: -1rem;
+      left: 8rem;
+      border: 1px solid #ec5242;
+      width: 15%; }
+  .tickets-header-pill {
+    justify-content: center;
+    border: 1px solid #d3d3d3;
+    width: 40%;
+    padding: 1rem;
+    border-radius: 2rem; }
+    .tickets-header-pill-square {
+      width: 2rem;
+      height: 2rem;
+      background-color: #ec5242;
+      transform: rotateZ(45deg);
+      margin-right: 2rem; }
+    .tickets-header-pill-step {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      color: #ec5242; }
+    .tickets-header-pill-text {
+      align-self: center;
+      margin-left: 2rem;
+      font-size: 1.3rem; }
+  .tickets-header-ticket {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: [date-start] 1fr [date-end one-day-ticket-start] 1fr [one-day-ticket-end two-day-ticket-start-first] 1fr [two-day-ticket-end-first two-day-ticket-start-second] 1fr [two-day-ticket-end-second affiliate-partner-start] 1fr [affiliate-partner-end];
+    position: relative;
+    background: linear-gradient(white, white), linear-gradient(60deg, red 0%, red 3.5%, white 3.5%, white 7%, blue 7%, blue 10.5%, red 10.5%, red 14%, white 14%, white 17.5%, blue 17.5%, blue 21%, red 21%, red 25%, white 25%, white 28.5%, blue 28.5%, blue 32%, red 32%, red 35.5%, white 35.5%, white 39%, blue 39%, blue 42.5%, red 42.5%, red 46%, white 46%, white 50%, blue 50%, blue 53.5%, red 53.5%, red 57%, white 57%, white 60.5%, blue 60.5%, blue 64%, red 64%, red 67.5%, white 67.5%, white 71%, blue 71%, blue 75%, red 75%, red 78.5%, white 78.5%, white 82%, red 82%, red 85.5%, blue 85.5%, blue 89%, white 89%, white 92.5%, red 92.5%, red 96%, blue 96%, blue 100%);
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-origin: content-box, padding-box;
+    background-clip: content-box, padding-box; }
+  .tickets-header-column {
+    padding: 4rem;
+    font-size: 1.5rem; }
+    .tickets-header-column--1 {
+      grid-column: date-start / date-end;
+      grid-row: 1 / 2;
+      border-right: 1px solid black;
+      border-bottom: 1px solid black; }
+    .tickets-header-column--2 {
+      grid-column: one-day-ticket-start / one-day-ticket-end;
+      grid-row: 1 / 2;
+      border-right: 1px solid black;
+      border-bottom: 1px solid black; }
+    .tickets-header-column--3 {
+      grid-column: two-day-ticket-start-first / two-day-ticket-end-second;
+      grid-row: 1 / 2;
+      border-right: 1px solid black;
+      border-bottom: 1px solid black; }
+    .tickets-header-column--4 {
+      grid-column: affiliate-partner-start / affiliate-partner-end;
+      grid-row: 1 / 2;
+      border-bottom: 1px solid black; }
+    .tickets-header-column--5 {
+      grid-column: date-start / date-end;
+      grid-row: 2 / 3;
+      border-right: 1px solid black;
+      border-bottom: 1px solid black; }
+    .tickets-header-column--6 {
+      grid-column: one-day-ticket-start / one-day-ticket-end;
+      grid-row: 2 / 3;
+      border-right: 1px solid black;
+      border-bottom: 1px solid black; }
+    .tickets-header-column--7 {
+      grid-column: two-day-ticket-start-first / two-day-ticket-end-first;
+      grid-row: 2 / 3;
+      border-bottom: 1px solid black;
+      border-right: 1px solid black; }
+    .tickets-header-column--8 {
+      grid-column: two-day-ticket-start-second / two-day-ticket-end-second;
+      grid-row: 2 / 3;
+      border-right: 1px solid black;
+      border-bottom: 1px solid black; }
+    .tickets-header-column--9 {
+      grid-column: affiliate-partner-start / affiliate-partner-end;
+      grid-row: 2 / 3;
+      border-bottom: 1px solid black; }
+    .tickets-header-column--10 {
+      grid-column: date-start / date-end;
+      grid-row: 3 / 4;
+      border-right: 1px solid black;
+      border-bottom: 1px solid black; }
+    .tickets-header-column--11 {
+      grid-column: one-day-ticket-start / one-day-ticket-end;
+      grid-row: 3 / 4;
+      border-right: 1px solid black;
+      border-bottom: 1px solid black; }
+    .tickets-header-column--12 {
+      grid-column: two-day-ticket-start-first / two-day-ticket-end-first;
+      grid-row: 3 / 4;
+      border-bottom: 1px solid black;
+      border-right: 1px solid black; }
+    .tickets-header-column--13 {
+      grid-column: two-day-ticket-start-second / two-day-ticket-end-second;
+      grid-row: 3 / 4;
+      border-right: 1px solid black;
+      border-bottom: 1px solid black; }
+    .tickets-header-column--14 {
+      grid-column: affiliate-partner-start / affiliate-partner-end;
+      grid-row: 3 / 4;
+      border-bottom: 1px solid black; }
+    .tickets-header-column--15 {
+      grid-column: date-start / date-end;
+      grid-row: 4 / 4;
+      border-right: 1px solid black; }
+    .tickets-header-column--16 {
+      grid-column: one-day-ticket-start / one-day-ticket-end;
+      grid-row: 4 / 4;
+      border-right: 1px solid black; }
+    .tickets-header-column--17 {
+      grid-column: two-day-ticket-start-first / two-day-ticket-end-first;
+      grid-row: 4 / 4;
+      border-right: 1px solid black; }
+    .tickets-header-column--18 {
+      grid-column: two-day-ticket-start-second / two-day-ticket-end-second;
+      grid-row: 4 / 4;
+      border-right: 1px solid black; }
+    .tickets-header-column--19 {
+      grid-column: affiliate-partner-start / affiliate-partner-end;
+      grid-row: 4 / 4; }
+
 .about-header {
   font-family: "Lato";
   padding: 0 30rem;
