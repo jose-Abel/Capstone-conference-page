@@ -409,6 +409,7 @@ body {
       font-size: 1.3rem; }
   .tickets-header-ticket {
     margin-top: 5rem;
+    margin-bottom: 10rem;
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: [date-start] 1fr [date-end one-day-ticket-start] 1fr [one-day-ticket-end two-day-ticket-start-first] 1fr [two-day-ticket-end-first two-day-ticket-start-second] 1fr [two-day-ticket-end-second affiliate-partner-start] 1fr [affiliate-partner-end];
@@ -507,6 +508,77 @@ body {
     .tickets-header-column--19 {
       grid-column: affiliate-partner-start / affiliate-partner-end;
       grid-row: 4 / 4; }
+
+.tickets-main {
+  font-family: "Lato"; }
+
+.tickets-lunch {
+  flex-direction: column;
+  align-items: center; }
+  .tickets-lunch-square {
+    width: 8rem;
+    height: 8rem;
+    background-color: #ec5242;
+    transform: translate(63rem, -4rem) rotateZ(45deg); }
+  .tickets-lunch-title {
+    margin: 5rem 0;
+    position: relative; }
+    .tickets-lunch-title::after {
+      content: "";
+      position: absolute;
+      bottom: -1rem;
+      left: 8rem;
+      border: 1px solid #ec5242;
+      width: 15%; }
+  .tickets-lunch-pill {
+    justify-content: center;
+    border: 1px solid #d3d3d3;
+    width: 50%;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin-bottom: 4rem; }
+    .tickets-lunch-pill-square {
+      width: 2rem;
+      height: 2rem;
+      background-color: #ec5242;
+      transform: rotateZ(45deg);
+      margin-right: 2rem; }
+    .tickets-lunch-pill-step {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      color: #ec5242; }
+    .tickets-lunch-pill-text {
+      align-self: center;
+      margin-left: 2rem;
+      font-size: 1.3rem; }
+  .tickets-lunch-menu {
+    margin-top: 5rem;
+    border: 1px solid #d3d3d3;
+    background-color: rgba(211, 211, 211, 0.075);
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem; }
+    .tickets-lunch-menu-title {
+      margin-bottom: 2rem;
+      background-color: #d3d3d3;
+      width: 100%;
+      text-align: center;
+      padding: 2rem; }
+    .tickets-lunch-menu-box {
+      margin-right: 6rem;
+      padding: 0 2rem 2rem 2rem; }
+    .tickets-lunch-menu-text {
+      font-size: 1.5rem; }
+  .tickets-lunch-submit-ticket {
+    margin: 4rem 0;
+    padding: 2rem 5rem;
+    font-size: 2rem;
+    background-color: #ec5242;
+    color: #fff;
+    border: none; }
+    .tickets-lunch-submit-ticket:focus, .tickets-lunch-submit-ticket:active {
+      outline: none;
+      background-color: #c54537; }
 
 .about-header {
   font-family: "Lato";
