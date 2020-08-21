@@ -56,7 +56,6 @@
   font-size: 1.5rem;
   font-weight: 700;
   width: 100%;
-  margin-left: calc(-2vw + (100 - 130) * ((100vw - 768px) / (1326 - 768)));
 
   @include respond(phone) {
     margin-left: 2rem;
@@ -69,21 +68,12 @@
 
 .nav-items-right {
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
   font-size: $font-size-small;
 
   @include respond(phone) {
     flex-direction: column;
     justify-content: start;
-  }
-}
-
-.nav-item-right {
-  margin-right: calc(2vw + (120 - 100) * ((100vw - 992px) / (1326 - 992)));
-  margin-left: calc(-25vw + (100 - 80) * ((100vw - 992px) / (1326 - 992)));
-
-  @include respond(phone) {
-    margin: 0;
   }
 }
 

@@ -35,6 +35,7 @@
 
     &--primary {
       font-size: 6rem;
+      font-weight: bolder;
       background: url("../img/text-background.jpg");
       background-position: center;
       background-size: cover;
@@ -127,28 +128,28 @@
 
 .main-program {
   background-image: repeating-linear-gradient(to bottom, transparent, transparent 5px, $color-secondary 5px, $color-secondary 10px), repeating-linear-gradient(to right, $color-secondary-lighter, $color-secondary-lighter 5px, $color-secondary 5px, $color-secondary 10px);
-  padding: 10rem 20rem;
-
-  @include respond(phone) {
-    padding: 10rem 10rem;
-  }
+  padding: 10rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &-title {
     text-align: center;
     margin-bottom: 5rem;
     position: relative;
-    width: 100%;
+    width: 20%;
     color: $color-white;
+    font-size: $font-size-medium;
 
     &::after {
       content: "";
       position: absolute;
       bottom: -1rem;
-      left: 43rem;
+      left: 10rem;
       border: 1px solid $color-tertiary;
-      width: 6%;
+      width: 20%;
 
-      @include respond(tab-port) {
+      @include respond(phone) {
         display: none;
       }
     }
@@ -156,10 +157,11 @@
 
   &-container {
     width: 80vw;
-    transform: translateX(-5rem);
+    justify-content: center;
 
     @include respond(tab-port) {
       flex-direction: column;
+      width: 50vw;
     }
   }
 
@@ -213,22 +215,27 @@
 // FEATURED SPEAKERS
 
 .featured-speakers {
+
+  flex-direction: column;
+  align-items: center;
+
   &-title {
     text-align: center;
     margin: 8rem 0;
-    position: relative;
-    width: 100%;
     color: black;
+    width: 30%;
+    position: relative;
+    font-size: $font-size-medium;
 
     &::after {
       content: "";
       position: absolute;
       bottom: -1rem;
-      left: 62rem;
+      left: 15rem;
       border: 1px solid $color-tertiary;
-      width: 6%;
+      width: 20%;
 
-      @include respond(tab-port) {
+      @include respond(phone) {
         display: none;
       }
     }
@@ -238,17 +245,16 @@
     display: grid;
     grid-template-columns: repeat(2, max-content);
     grid-template-rows: repeat(3, 1fr);
-    grid-row-gap: 10rem;
-    margin-left: 8vw;
-
-    @include respond(tab-land) {
-      margin-left: 3vw;
-    }
+    grid-row-gap: 5rem;
 
     @include respond(tab-port) {
       display: flex;
       flex-direction: column;
       margin-left: 6vw;
+    }
+
+    @include respond(tab-port) {
+      grid-row-gap: 10rem;
     }
   }
 
@@ -334,10 +340,6 @@
       margin-top: 1.5rem;
       word-break: break-word;
       width: 25vw;
-
-      @include respond(tab-land) {
-        font-size: $font-size-small;
-      }
     }
   }
 }
@@ -349,21 +351,27 @@
 
   &-top {
     background-color: $color-secondary;
-    padding: 6rem 10rem 10rem 10rem;
+    padding: 6rem 10rem 6rem 10rem;
+    flex-direction: column;
+    align-items: center;
 
     &--title {
       color: $color-primary;
       text-align: center;
-      margin-bottom: 4rem;
       position: relative;
+      width: 20%;
 
       &::after {
         content: "";
         position: absolute;
         bottom: -1rem;
-        left: 54rem;
+        left: 9rem;
         border: 1px solid $color-tertiary;
-        width: 6%;
+        width: 20%;
+
+        @include respond(tab-land) {
+          left: 6rem;
+        }
 
         @include respond(tab-port) {
           display: none;
@@ -373,7 +381,7 @@
 
     &-partners {
       justify-content: center;
-      margin-top: 8rem;
+      margin-top: 6rem;
 
       @include respond(phone) {
         flex-direction: column;
@@ -384,6 +392,10 @@
         color: $color-primary;
         font-size: $font-size-large;
         margin-right: 5rem;
+
+        @include respond(tab-land) {
+          font-size: $font-size-medium;
+        }
 
         @include respond(phone) {
           font-size: $font-size-medium;
