@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 
@@ -69,6 +68,3 @@ This project is MIT licensed.
 ## Show your support
 
 Give a ⭐️ if you like this project!
-=======
-# Capstone-conference-page
->>>>>>> 99f9960ef2d2a8399aa6938e4aff5be56e475a49
