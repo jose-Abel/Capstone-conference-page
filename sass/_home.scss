@@ -1,0 +1,442 @@
+// HEADING
+
+.heading {
+  background-color: rgba(211, 211, 211, 0.205);
+
+  &-background-img {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/blockchain-conference.jpg");
+    background-size: cover;
+    height: 15rem;
+    background-position: center;
+  }
+
+  &-box {
+    margin: 0 0 0 10rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    transform: translateY(-5rem);
+
+    &--secondary {
+      font-size: $font-size-large;
+      color: $color-tertiary;
+      position: relative;
+
+      .electron-svg {
+        position: absolute;
+        right: 0;
+      }
+
+      .ethereum-svg {
+        position: absolute;
+        left: -5rem;
+        top: 10rem;
+      }
+    }
+
+    &--primary {
+      font-size: 6rem;
+      font-weight: bolder;
+      background: url("../img/text-background.jpg");
+      background-position: center;
+      background-size: cover;
+      -webkit-background-clip: text;
+      color: transparent;
+      padding-right: 20rem;
+      position: relative;
+
+      @include respond(phone) {
+        font-size: 2rem;
+      }
+    }
+
+    &--paragraph {
+      font-size: $font-size-small;
+      background-color: $color-white;
+      padding: 7rem 4rem 4rem 4rem;
+      width: 70%;
+      position: relative;
+      z-index: 5;
+
+      .bitcoin-svg {
+        position: absolute;
+        right: -2rem;
+        top: -1rem;
+        z-index: 2;
+      }
+
+      .dogecoin-svg {
+        position: absolute;
+        right: -10rem;
+
+        @include respond(phone) {
+          display: none;
+        }
+      }
+    }
+
+    &--date {
+      font-size: 2.5rem;
+      font-weight: 900;
+      margin: 5rem 0 2rem 0;
+      margin-left: 3rem;
+      position: relative;
+
+      @include respond(phone) {
+        font-size: 1.5rem;
+      }
+
+      .xrp-svg {
+        position: absolute;
+        left: -8rem;
+        top: 3rem;
+      }
+
+      .litecoin-svg {
+        position: absolute;
+        left: 35rem;
+
+        @include respond(phone) {
+          display: none;
+        }
+      }
+    }
+
+    &--location {
+      font-size: $font-size-medium;
+      margin-left: 3rem;
+      position: relative;
+      width: 45%;
+
+      @include respond(phone) {
+        font-size: $font-size-small;
+      }
+
+      .tether-svg {
+        position: absolute;
+        right: -5rem;
+      }
+    }
+  }
+
+  &-svg {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}
+
+// MAIN PROGRAMS
+
+.main-program {
+  background-image: repeating-linear-gradient(to bottom, transparent, transparent 5px, $color-secondary 5px, $color-secondary 10px), repeating-linear-gradient(to right, $color-secondary-lighter, $color-secondary-lighter 5px, $color-secondary 5px, $color-secondary 10px);
+  padding: 10rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-title {
+    text-align: center;
+    margin-bottom: 5rem;
+    position: relative;
+    width: 20%;
+    color: $color-white;
+    font-size: $font-size-medium;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -1rem;
+      left: 10rem;
+      border: 1px solid $color-tertiary;
+      width: 20%;
+
+      @include respond(phone) {
+        display: none;
+      }
+    }
+  }
+
+  &-container {
+    width: 80vw;
+    justify-content: center;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+      width: 50vw;
+    }
+  }
+
+  &-card {
+    background-color: $color-secondary-more-lighter;
+    color: $color-white;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      border-right: 1px solid black;
+
+      @include respond(tab-port) {
+        border-right: none;
+        border-bottom: 1px solid black;
+      }
+    }
+
+    &:hover {
+      border: 3px solid $color-white;
+    }
+
+    &--img {
+      height: 5rem;
+      width: 5rem;
+      margin: 2rem 0;
+      justify-self: center;
+    }
+
+    &--title {
+      margin: 2rem 0;
+    }
+
+    &--text {
+      font-size: 1.3rem;
+    }
+  }
+
+  &-see-more {
+    margin-top: 10rem;
+    color: $color-white;
+    text-transform: uppercase;
+    font-size: $font-size-medium;
+    text-align: center;
+    text-decoration: underline;
+  }
+}
+
+// FEATURED SPEAKERS
+
+.featured-speakers {
+  flex-direction: column;
+  align-items: center;
+
+  &-title {
+    text-align: center;
+    margin: 8rem 0;
+    color: black;
+    width: 30%;
+    position: relative;
+    font-size: $font-size-medium;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -1rem;
+      left: 15rem;
+      border: 1px solid $color-tertiary;
+      width: 20%;
+
+      @include respond(phone) {
+        display: none;
+      }
+    }
+  }
+
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 5rem;
+
+    @include respond(tab-port) {
+      display: flex;
+      flex-direction: column;
+      margin-left: 6vw;
+    }
+
+    @include respond(tab-port) {
+      grid-row-gap: 10rem;
+    }
+  }
+
+  &-card {
+    display: flex;
+    margin-left: 7rem;
+
+    &--1 {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+
+    &--2 {
+      grid-column: 2 / 2;
+      grid-row: 1 / 2;
+    }
+
+    &--3 {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+    }
+
+    &--4 {
+      grid-column: 2 / 2;
+      grid-row: 2 / 3;
+    }
+
+    &--5 {
+      grid-column: 1 / 2;
+      grid-row: 3 / 3;
+    }
+
+    &--6 {
+      grid-column: 2 / 2;
+      grid-row: 3 / 3;
+    }
+
+    &--background {
+      width: 8rem;
+      height: 8rem;
+      background-image: repeating-linear-gradient(to bottom, transparent, transparent 5px, $color-white 5px, $color-white 10px), repeating-linear-gradient(to right, $color-primary, $color-primary 5px, $color-white 5px, $color-white 10px);
+      transform: translate(-3rem, -2rem);
+      position: absolute;
+      z-index: 2;
+    }
+
+    &--img {
+      position: absolute;
+      z-index: 5;
+    }
+
+    &-text {
+      margin-left: 15rem;
+
+      @include respond(tab-port) {
+        margin-left: 17rem;
+      }
+    }
+
+    &--author {
+      font-size: $font-size-small;
+      margin-top: 1rem;
+    }
+
+    &--job {
+      color: $color-tertiary;
+      font-style: italic;
+      font-size: 1rem;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -1rem;
+        left: 0;
+        border: 1px solid $color-primary;
+        width: 6%;
+      }
+    }
+
+    &--studies {
+      font-size: 1.2rem;
+      margin-top: 1.5rem;
+      word-break: break-word;
+      width: 25vw;
+    }
+  }
+}
+
+// FOOTER
+
+.footer {
+  margin-top: 8rem;
+
+  &-top {
+    background-color: $color-secondary;
+    padding: 6rem 10rem 6rem 10rem;
+    flex-direction: column;
+    align-items: center;
+
+    &--title {
+      color: $color-primary;
+      text-align: center;
+      position: relative;
+      width: 20%;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -1rem;
+        left: 9rem;
+        border: 1px solid $color-tertiary;
+        width: 20%;
+
+        @include respond(tab-land) {
+          left: 6rem;
+        }
+
+        @include respond(tab-port) {
+          display: none;
+        }
+      }
+    }
+
+    &-partners {
+      justify-content: center;
+      margin-top: 6rem;
+
+      @include respond(phone) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &--name {
+        color: $color-primary;
+        font-size: $font-size-large;
+        margin-right: 5rem;
+
+        @include respond(tab-land) {
+          font-size: $font-size-medium;
+        }
+
+        @include respond(phone) {
+          font-size: $font-size-medium;
+          margin-bottom: 2rem;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  &-bottom {
+    margin-top: 10rem;
+    padding: 0 10rem;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
+
+    &-logo {
+      align-items: center;
+
+      &--img {
+        width: 5rem;
+        height: 5rem;
+      }
+
+      &--title {
+        font-size: $font-size-medium;
+        font-family: "Lato", sans-serif;
+        font-weight: 900;
+        margin-left: 3rem;
+      }
+    }
+
+    &-text {
+      font-size: $font-size-small;
+      justify-self: center;
+      margin-left: 10rem;
+
+      @include respond(phone) {
+        display: none;
+      }
+    }
+  }
+}

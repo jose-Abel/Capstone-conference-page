@@ -1,0 +1,16 @@
+.flex {
+  display: flex;
+}
+
+.remove-a-tag-decoration {
+  color: currentColor;
+}
+
+.remove-a-tag-decoration:hover {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.passing-nu-val {
+  display: none;
+}

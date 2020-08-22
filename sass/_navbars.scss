@@ -1,0 +1,101 @@
+// TOP NAVBAR
+
+.top-ul {
+  justify-content: flex-end;
+  align-items: center;
+  background-color: $color-secondary;
+  width: 100%;
+
+  &-svg-logo {
+    width: 2rem;
+    height: 2rem;
+    fill: $color-white;
+  }
+
+  &-li {
+    color: $color-white;
+    list-style: none;
+    font-size: $font-size-small;
+  }
+}
+
+// BOTTOM NAVBAR
+
+.top-navbar-button-container {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #fff;
+}
+
+.navbar-ul-bottom {
+  align-items: center;
+  width: 100%;
+
+  @include respond(phone) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.nav-item-left {
+  width: 20%;
+}
+
+.blockchain-logo {
+  width: 3rem;
+  height: 3rem;
+
+  @include respond(phone) {
+    margin-left: 2rem;
+  }
+}
+
+.blockchain-conference {
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  width: 100%;
+
+  @include respond(phone) {
+    margin-left: 2rem;
+  }
+}
+
+.bc-date {
+  margin-top: -1rem;
+}
+
+.nav-items-right {
+  width: 100%;
+  justify-content: space-around;
+  font-size: $font-size-small;
+
+  @include respond(phone) {
+    flex-direction: column;
+    justify-content: start;
+  }
+}
+
+.item-rigth-nav-link-active,
+.item-rigth-nav-link-active:active {
+  width: 100%;
+  color: $color-tertiary;
+  padding: 1.5rem !important;
+}
+
+.item-rigth-nav-link,
+.item-rigth-nav-link:active {
+  width: 100%;
+  color: $color-secondary;
+  padding: 1.5rem !important;
+}
+
+.nav-link:hover {
+  color: $color-tertiary;
+}
+
+.nav-link:focus {
+  border: 5px solid $color-tertiary;
+  color: $color-tertiary;
+}
