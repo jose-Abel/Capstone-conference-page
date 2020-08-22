@@ -80,6 +80,10 @@ body {
   color: currentColor;
 }
 
+.passing-nu-val {
+  display: none;
+}
+
 .top-ul {
   justify-content: flex-end;
   align-items: center;
