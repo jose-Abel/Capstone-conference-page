@@ -55,7 +55,7 @@ We run the tests for the linters.yml file and everything pass!
 
 Appreciate the teams at Google Font's API, helps coding amazing webpages faster.
 
-A special thanks to the designer of the webpage Cindy Shin in Behance.
+A special thanks to the designer of the website Cindy Shin in Behance https://www.behance.net/adagio07.
 
 A thanks to srip a designer that design the blockchain.svg that I've downloaded from the website https://www.flaticon.es/icono-gratis/blockchain_2091556#
 
