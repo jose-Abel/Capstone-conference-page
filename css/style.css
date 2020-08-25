@@ -765,6 +765,10 @@ body {
   }
 }
 
+.tickets-header-column-price {
+  color: red;
+}
+
 .tickets-header-column--1 {
   grid-column: date-start / date-end;
   grid-row: 1 / 2;

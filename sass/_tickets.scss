@@ -90,6 +90,10 @@
       padding: 1rem;
     }
 
+    &-price {
+      color: red;
+    }
+
     &--1 {
       grid-column: date-start / date-end;
       grid-row: 1 / 2;
