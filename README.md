@@ -20,7 +20,8 @@ The Microverse Capstone project for the HTML and CSS module where I got assigned
 ## Built With
 
 - HTML
-- CSS: flexbox, grids, linear-gradients and more.
+- CSS tecnologies such as flexbox, grids, linear-gradients and more.
+- Sass a CSS preprocessor
 - Bootstrap framework
 - SVG's
 - Google API's Font
