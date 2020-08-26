@@ -90,6 +90,12 @@
       padding: 1rem;
     }
 
+    &-price {
+      color: red;
+      align-items: center;
+      flex-direction: column;
+    }
+
     &--1 {
       grid-column: date-start / date-end;
       grid-row: 1 / 2;
