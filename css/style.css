@@ -767,6 +767,9 @@ body {
 
 .tickets-header-column-price {
   color: red;
+  display: flex;
+  align-items: center;
+  flex-direction: column
 }
 
 .tickets-header-column--1 {
