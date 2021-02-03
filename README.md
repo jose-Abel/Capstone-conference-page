@@ -39,7 +39,7 @@ You can clone this code anytime and load the HTML on your browser, because it ha
 
 
 ## Live version
-https://tender-goodall-645fd2.netlify.app/
+[live version](https://jose-abel-conference-page.netlify.app/)
 
 
 ### Setup
